@@ -1,0 +1,88 @@
+.app__info{
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(17, 18, 20, 1) 0%, rgba(52, 58, 64, 1) 50%, rgba(17, 18, 20, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(17, 18, 20, 1) 0%, rgba(52, 58, 64, 1) 50%, rgba(17, 18, 20, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(17, 18, 20, 1) 0%, rgba(52, 58, 64, 1) 50%, rgba(17, 18, 20, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111214', endColorstr='#111214', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(17, 18, 20, 1) 0%, rgba(52, 58, 64, 1) 50%, rgba(17, 18, 20, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(17, 18, 20, 1) 0%, rgba(52, 58, 64, 1) 50%, rgba(17, 18, 20, 1) 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 5rem;
+}
+.app__info-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+.app__info-content h1{
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+.app__info-content p{
+    color: #ccc;
+}
+.app__info-btns{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app__info-btns button{
+    background: var(--white);
+    padding: 1.2rem 2.5rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin: 0 1rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+.app__info-btns button:nth-child(2){
+    background: var(--black);
+    color: #fff;
+}
+@media screen and (max-width:1000px) {
+    .app__info{
+        flex-direction: column;
+    }
+    .app__info-content{
+        align-items: center;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px) {
+    .app__info{
+        padding:6rem 0rem;
+    }
+    .app__info-btns{
+        flex-direction: column;
+    }
+    .app__info-btns button{
+        margin: 1rem 0;
+    }
+    .app__info-content{
+        margin: 0;
+    }
+}
